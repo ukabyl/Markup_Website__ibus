@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>iBus</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#826a45">
+	<!-- Custom Browsers Color End -->
+
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/accordion/accordion.css">
+	<link rel="stylesheet" href="libs/iziModal/css/iziModal.min.css">
+	<link rel="stylesheet" href="icons/style.css">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-6">
+					<div class="logo header__logo">
+						iBus
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="header__link">
+						<a href="#" class="header__link-item">
+							<span class="icon-headphones"></span>
+							Служба поддержки
+						</a>
+						<a href="#" class="header__link-item">
+							<span class="icon-account"></span>
+							Личный кабинет
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="order">
+		<div class="container">
+			<h1 class="title order__title">
+				<span class="title__main">
+					Билеты на автобус
+				</span>
+				<span class="title__second">
+					по всему Казахастану
+				</span>
+			</h1>
+			<div class="search-ticket order__search-ticket">
+				<div class="search-ticket__item">
+					<label class="search-ticket__label" for="from">Откуда</label>
+					<input id="from" type="text" value="Шымкент" name="from" class="search-ticket__input">
+					<span class="search-ticket__icon icon-transfer"></span>
+				</div>
+
+				<div class="search-ticket__item">
+					<label class="search-ticket__label" for="where">Куда</label>
+					<input id="where" type="text" value="Алмата" name="where" class="search-ticket__input">
+				</div>
+
+				<div class="search-ticket__item">
+					<label class="search-ticket__label" for="on">Дата поездки</label>
+					<input type="text" name="on" value="05.05.20" id="on" class="search-ticket__input">
+					<span class="search-ticket__icon icon-calendar"></span>
+				</div>
+
+				<div class="search-ticket__item">
+					<label class="search-ticket__label" for="passenger">Пассажиры</label>
+					<input type="text" name="passenger" value="2" id="passenger" class="search-ticket__input">
+					<span class="search-ticket__icon icon-user"></span>
+				</div>
+				
+				<div class="search-ticket__button">
+					<a href="tickets.html" class="button">Найти билет</a>
+				</div>
+
+				<div class="search-ticket__nav">
+					<a href="#" class="search-ticket__nav-item">Завтра</a>
+					<a href="#" class="search-ticket__nav-item">Послезавтра</a>
+					<a href="#" class="search-ticket__nav-item">Все дни</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about section">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-3 col-6">
+					<div class="about__item">
+						<div class="about__icon">
+							<span class="icon-clock"></span>
+						</div>
+						<div class="about__title">
+							Без касс и очередей
+						</div>
+						<div class="about__text">
+							Билеты онлайн в любое время на сайте и в приложении
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-6">
+					<div class="about__item">
+						<div class="about__icon">
+							<span class="icon-road"></span>
+						</div>
+						<div class="about__title">
+							50 000 направлений
+						</div>
+						<div class="about__text">
+							Рейтинг рейсов перевозчиков по отзывам пассажиров
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-6">
+					<div class="about__item">
+						<div class="about__icon">
+							<span class="icon-pay"></span>
+						</div>
+						<div class="about__title">
+							Безопасная оплата
+						</div>
+						<div class="about__text">
+							Стандарты безопасности PCI DSS для защиты платежных данных
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-6">
+					<div class="about__item">
+						<div class="about__icon">
+							<span class="icon-tax"></span>
+						</div>
+						<div class="about__title">
+							Возврат билетов
+						</div>
+						<div class="about__text">
+							Быстрое оформление возврата в личном кабинете
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="popular-direction">
+		<div class="container">
+			<div class="row align-items-end">
+				<div class="col-xl-6 col-12">
+					<h2 class="section__title">
+						Популярные направления из:
+					</h2>
+				</div>
+				<div class="col-xl-6 col-12">
+					<div class="search-ticket order__search-ticket">
+
+					<div class="search-ticket__item popular-direction__search-input">
+						<label class="search-ticket__label" for="popular-direction">Город отправления</label>
+						<input id="popular-direction" type="text" value="Алмата" name="popular-direction" class="search-ticket__input popular-direction__input">
+					</div>
+
+					<div class="search-ticket__item popular-direction__search-input">
+						<label class="search-ticket__label" >Дата поездки</label>
+						<input type="text" name="on" value="15.05.20" class="search-ticket__input popular-direction__input">
+						<span class="search-ticket__icon icon-calendar"></span>
+					</div>
+				</div>
+				</div>
+				<div class="col-12">
+					<div class="card-box">
+						<div class="card-box__item">
+							<div class="card-box__item-city">
+								<span>Шымкент</span>
+								<span>Алмата</span>
+							</div>
+							<div class="card-box__item-price">
+								<span>Цена от</span>
+								<b>3500тнг</b>
+							</div>
+						</div>
+						<div class="card-box__item">
+							<div class="card-box__item-city">
+								<span>Шымкент</span>
+								<span>Алмата</span>
+							</div>
+							<div class="card-box__item-price">
+								<span>Цена от</span>
+								<b>3500тнг</b>
+							</div>
+						</div>
+						<div class="card-box__item">
+							<div class="card-box__item-city">
+								<span>Шымкент</span>
+								<span>Алмата</span>
+							</div>
+							<div class="card-box__item-price">
+								<span>Цена от</span>
+								<b>3500тнг</b>
+							</div>
+						</div>
+						<div class="card-box__item">
+							<div class="card-box__item-city">
+								<span>Шымкент</span>
+								<span>Алмата</span>
+							</div>
+							<div class="card-box__item-price">
+								<span>Цена от</span>
+								<b>3500тнг</b>
+							</div>
+						</div>
+						<div class="card-box__item">
+							<div class="card-box__item-city">
+								<span>Шымкент</span>
+								<span>Алмата</span>
+							</div>
+							<div class="card-box__item-price">
+								<span>Цена от</span>
+								<b>3500тнг</b>
+							</div>
+						</div>
+						<div class="card-box__item">
+							<div class="card-box__item-city">
+								<span>Шымкент</span>
+								<span>Алмата</span>
+							</div>
+							<div class="card-box__item-price">
+								<span>Цена от</span>
+								<b>3500тнг</b>
+							</div>
+						</div>
+						<div class="card-box__item">
+							<div class="card-box__item-city">
+								<span>Шымкент</span>
+								<span>Алмата</span>
+							</div>
+							<div class="card-box__item-price">
+								<span>Цена от</span>
+								<b>3500тнг</b>
+							</div>
+						</div>
+						<div class="card-box__item">
+							<div class="card-box__item-city">
+								<span>Шымкент</span>
+								<span>Алмата</span>
+							</div>
+							<div class="card-box__item-price">
+								<span>Цена от</span>
+								<b>3500тнг</b>
+							</div>
+						</div>
+						<div class="card-box__item">
+							<div class="card-box__item-city">
+								<span>Шымкент</span>
+								<span>Алмата</span>
+							</div>
+							<div class="card-box__item-price">
+								<span>Цена от</span>
+								<b>3500тнг</b>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="credits">
+				© 2020, OOO «Басфор». Все права защищены. «Busfor» — Онлайн сервис продажи билетов
+			</div>
+		</div>
+	</footer>
+	
+	
+	<script src="libs/jquery/dist/jquery.min.js"></script>
+	<script src="libs/accordion/accordion.min.js"></script>
+	<script src="libs/simpler-sidebar/src/simpler-sidebar.js"></script>
+	<script src="libs/iziModal/js/iziModal.min.js"></script>
+	<script src="libs/maskinput/maskinput.js"></script>
+	<script src="js/scripts.js"></script>
+
+</body>
+</html>
