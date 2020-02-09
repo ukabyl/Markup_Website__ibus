@@ -1,0 +1,520 @@
+.ticket-section-ds{
+	background:#f5f5f5;
+	&__tickets{
+		margin-top: 3rem;
+	}
+	&__title{
+		font-size: 1.5rem;
+		font-weight: 400;
+		color: rgba(#333, .9)
+	}
+	&__note{
+		margin-top: 1rem;
+		border-radius: 5px;
+		background: #fff;
+		padding: 10px;
+		&-title{
+			display: flex;
+			font-weight: 600;
+		}
+		&-text{
+			margin-top: 1rem;
+		}
+		&-note{
+			padding: 5px;
+			background: #fe8300;
+			color: #fff;
+			font-size: 14px;
+			border-radius: 3px;
+			margin-left: 10px;
+			font-weight: 400;
+		}
+	}
+}
+
+.ticket{
+	box-shadow: 0 0 38px -20px #000;
+	border-radius: 2px;
+	margin-top: 1rem;
+	&_print{
+		border: 1px solid #fe8300;
+		position: relative;
+		margin-bottom: 2.5rem;
+	}
+	&__places{
+		color: rgb(50, 196, 83);
+		font-size: 14px;
+		text-align: center;
+		display: block;
+		margin-top: 5px;
+	}
+	&__price{
+		color: #fe8a2f;
+		font-size: 1.4rem;
+	}
+	&__print-text{
+		background: #fd8300;
+		position: absolute;
+		top: -26px;
+		z-index: 9;
+		left: 0;
+		font-size: 12px;
+		padding: 5px;
+		border-top-left-radius: 2px;
+		border-top-right-radius: 2px;
+		color: #fff;
+	}
+	&__top{
+		padding: 10px;
+		background: #fff;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__time{
+		display: flex;
+		align-items: center;
+		&-hour{
+			font-weight: 500;
+			font-size: 2rem;
+			color: rgba(#000, .8);
+			position: relative;
+			display: flex;
+			align-items: flex-start;
+		}
+		&-date{
+			background: #f5f5f5;
+			display: block;
+			border-radius: 2px;
+			font-size: 12px;
+			text-align: center;
+			padding: 4px;
+			width: max-content;
+			white-space: nowrap;
+			margin-left: 5px;
+		}
+		&-track{
+			font-size: 12px;
+			color: rgba(#000, .6);
+			margin-left: 15px;
+		}
+	}
+	&__left{
+		width: 35%;
+	}
+	&__right{
+		width: 25%;
+	}
+	&__center{
+		width: 35%;
+	}
+	&__from{
+		color: rgba(#000, .8);
+		&-title{
+			font-size: 15px;
+		}
+		&-info{
+			font-size: 14px;
+		}
+	}
+	&__to{
+		color: rgba(#000, .8);
+		&-title{
+			font-size: 15px;
+		}
+		&-info{
+			font-size: 14px;
+		}
+	}
+	&__right{
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+	&__center{
+		border-right: 1px dashed rgba(#000, .4);
+	}
+	&__bottom{
+		background: #f6f5f5;
+		display: flex;
+		justify-content: space-between;
+		&-left{
+			width: 72%;
+			border-right: 1px dashed rgba(#000, .4);
+			display: flex;
+			align-items: center;
+		}
+		&-right{
+			width: 25%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 0 25px 0 0;
+		}
+	}
+	&__details-btn{
+		display: flex;	
+		background:	none;
+		border: none;
+		color: red;
+		font-size: 	14px;
+		align-items: center;
+		margin-right: 15px;
+		padding: .8rem 1rem;
+		i{
+			margin-right: 5px;
+		}
+	}
+	&__ferry{
+		font-size: 15px;
+		color: rgba(#000, .7);
+	}
+	&__adv{
+		display: flex;
+		align-items: center;
+		&-item{
+			margin-right: 5px;
+			display: block;
+			cursor: pointer;
+		}
+	}
+	&__star{
+		display: flex;	
+		align-items: center;
+		color: rgba(#333, .5);
+		&-icon{
+			&_has{
+				color: #ff8400;
+			}
+		}
+		&-estimation{
+			margin-left: 	5px;
+			font-size: 14px;
+		}
+	}
+}
+
+.ticket-info{
+	font-size: 14px;
+	&__card{    
+		padding: 0 1rem;
+		background: #f6f5f5;
+	}
+	.nav-tabs .nav-link{
+		border-top: 1px solid transparent;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+    border-bottom: 	none;
+    border-right: 	none;
+    border-left: 	none;
+    color: red;
+    font-size: 	12px;
+	}
+	.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+		border-color: red;
+		color: #000;
+	}
+	&__nav{
+		border-bottom: none;
+		&-item{
+
+		}
+		&-link{
+
+		}
+	}
+	&__tab-content{
+		padding: 2rem 0;
+	}
+}
+
+.ticket-track{
+	display: flex;
+	justify-content: space-between;
+	&__info{
+	}
+	&__type{
+		margin-top: 1rem;
+		margin-bottom: 2rem;
+	}
+	&__left{
+		width: 45%;
+	}
+	&__right{
+		width: 45%;
+	}
+	&__way{
+		position: relative;
+		&:before{
+			content: '';
+			display: block;
+			height: 85%;
+			border-right: 1px dashed rgba(#333, .5);
+			position: absolute;
+			left: 108px;
+			top: 0;
+		}
+		&-start{
+			.ticket-track__way-item-info{
+				position: relative;
+				&:before{
+					content: '';
+					position: absolute;
+					display: block;
+					height: 10px;
+					width: 10px;
+					border: 1px solid red;
+					top: 0;
+					background: #fff;
+					left: -67px;
+					border-radius: 100%;
+				}
+			}
+			
+		}
+		&-end{
+			.ticket-track__way-item-info{
+				position: relative;
+				&:before{
+					content: '';
+					position: absolute;
+					display: block;
+					height: 10px;
+					width: 10px;
+					border: 1px solid red;
+					top: 0;
+					background: #fff;
+					left: -67px;
+					border-radius: 100%;
+				}
+			}
+			
+		}
+		&-item{
+			display: flex;
+			margin-bottom: 20px;
+			&.point{
+				.ticket-track__way-item-info{
+					position: relative;
+					&:before{
+						content: '';
+						position: absolute;
+						display: block;
+						height: 8px;
+						width: 8px;
+						border: 1px solid red;
+						top: 0;
+						background: #fff;
+						left: -66px;
+						border-radius: 100%;
+					}
+				}
+			}
+			&:last-child{
+				margin-bottom: 0;
+			}
+			&-info{
+				margin-left: 100px;
+			}
+			&-time{
+				width: 70px;
+			}
+		}
+	}
+	&__other{
+		margin-bottom: 1rem;
+		&-title{
+			font-weight: 600;
+		}
+		&-list{
+			margin-top: .5rem;
+			&-item{
+				margin-top: .5rem;
+			}
+		}
+	}
+}
+
+.ticket-section-mb{
+	background: #f5f5f5;
+	display: none;
+	&__title{
+		font-size: 18px;
+		margin-bottom: 1rem;
+		margin-top: 1rem;
+	}
+	&__note{
+		font-size: 14px;
+		background: #fff;
+		border-radius: 5px;
+		padding: 12px 10px;
+		margin-bottom: 1rem;
+		&-title{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 10px;
+		}
+		&-note{
+			background:#ff8400;
+			color: #fff;
+			font-weight: 400;
+			padding: 3px;
+			font-size: 12px;
+			border-radius: 2px;
+		}
+		&-text{
+			font-size: 12px;
+		}
+	}
+	&__sort{
+		margin-bottom: 1rem;
+	}
+	&__tickets{
+
+	}
+}
+
+.ticket-mb{
+	background: #fff;
+	border-radius: 5px;
+	margin-top: 1rem;
+	&__print-text{
+		background:#ff8400;
+		position: absolute;
+		left: 0;
+		top: -20px;
+		color: #fff;
+		font-size: 12px;
+		padding: 3px;
+	}
+	&_print{
+		position: relative;
+		border: 1px solid #ff8400;
+		margin-top: 2rem;
+	}
+	&__header{
+		display: flex;
+		justify-content: space-between;
+		padding: 5px 10px;
+	}
+	&__body{
+		display: flex;
+		justify-content: space-between;
+		padding: 10px;
+	}	
+	&__bottom{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 45px;
+		&-info{
+			width: 50%;
+			padding-left: 10px;
+			padding-right: 10px;
+			font-size: 12px;
+			display: flex;
+			justify-content: space-between;
+			&-place{
+				color: green;
+			}
+			&-passenger{
+				margin-left: auto;
+				color: rgba(#333, .7);
+			}
+		}
+		&-btn{
+			width: 50%;
+			.button{
+				border-top-right-radius: 0;
+				border-bottom-left-radius: 0;
+			}
+		}
+		
+	}
+	&__ferry{
+		font-size: 12px;
+		text-transform: uppercase;
+		color: rgba(#333, .5)
+	}
+	&__star{
+		font-size: 12px;
+		&_has{
+			i{
+			  color: #ff8400;
+			}
+		}
+	}
+	&__start{
+		width: 50%;
+		&-time{	
+			font-weight: 600;
+			font-size: 20px;
+		}
+
+		&-info{
+			display: flex;
+			align-items: flex-start;
+		}
+		&-destination{
+			font-size: 12px;
+			margin-left: 10px;
+			color: rgba(#333, .6);
+		}
+		&-place{
+			font-size: 12px;
+			margin-top: 10px;
+		}
+	}
+
+	&__end{
+		width: 50%;
+		&-time{	
+			font-weight: 600;
+			font-size: 20px;
+		}
+
+		&-info{
+			display: flex;
+			align-items: center;
+		}
+		&-way{
+			font-size: 12px;
+			margin-left: 10px;
+			color: rgba(#333, .6);
+		}
+		&-place{
+			font-size: 12px;
+			margin-top: 10px;
+		}
+	}
+
+}
+
+
+@media screen and ( max-width: 768px ) {
+	.ticket-section-ds{
+		display: none;
+	}
+	.ticket-section-mb{
+		display: block;
+	}
+	.search-ticket{
+		&__button{
+			width: 	100%;
+		}
+	}
+	.title{
+		&__main{
+			&-ticket{
+				font-size: 1rem;
+			}
+		}
+		&__second{
+			&-ticket{
+				font-size: 1.2rem;
+			}
+		}
+	}
+}

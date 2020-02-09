@@ -96,9 +96,22 @@ ul {
   display: block;
 }
 
+.title__main-ticket {
+  font-size: 1.5rem;
+  text-align: left;
+  display: block;
+}
+
 .title__second {
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+.title__second-ticket {
+  font-size: 2rem;
+  margin-top: 1rem;
+  text-align: left;
+  display: block;
 }
 
 .container {
@@ -161,8 +174,40 @@ ul {
   color: #fff;
 }
 
+.hamburger {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hamburger__line {
+  display: block;
+  height: 2px;
+  width: 30px;
+  background: #000;
+  margin-bottom: 5px;
+}
+
+.hamburger__line:last-child {
+  margin-bottom: 0;
+}
+
 .header {
   padding: 1.5rem 0;
+}
+
+.header__hamburger {
+  display: none;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-left: auto;
 }
 
 .header__link {
@@ -232,6 +277,10 @@ ul {
 
 .order__title {
   margin-bottom: 3rem;
+}
+
+.order__title-ticket {
+  margin-bottom: 1rem;
 }
 
 .order__search-ticket {
@@ -438,4 +487,53 @@ ul {
   padding: 2rem 0;
   background: #f5f5f5;
   text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .section {
+    padding: 1rem 0;
+  }
+  .header {
+    padding: 1rem 0;
+  }
+  .header__link {
+    display: none;
+  }
+  .header__hamburger {
+    display: block;
+  }
+  .search-ticket {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .search-ticket__item {
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  .search-ticket__button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .search-ticket__nav {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    bottom: -35px;
+  }
+  .card-box__item {
+    width: 100%;
+  }
+  .order__search-ticket {
+    width: 100%;
+  }
+  .about {
+    text-align: center;
+  }
+  .about__item {
+    padding: 1rem .1rem;
+  }
 }

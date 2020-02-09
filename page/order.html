@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>iBus - order</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#826a45">
+	<!-- Custom Browsers Color End -->
+
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/accordion/accordion.css">
+	<link rel="stylesheet" href="libs/iziModal/css/iziModal.min.css">
+	<link rel="stylesheet" href="icons/style.css">
+
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+	<link rel="stylesheet" href="css/order.min.css">
+	<link rel="stylesheet" href="css/bus.min.css">
+
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-6">
+					<div class="logo header__logo">
+						<a href="">iBus</a>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="header__link">
+						<a href="#" class="header__link-item">
+							<span class="icon-headphones"></span>
+							Служба поддержки
+						</a>
+						<a href="#" class="header__link-item">
+							<span class="icon-account"></span>
+							Личный кабинет
+						</a>
+					</div>
+					<div class="header__hamburger">
+						<div class="hamburger">
+							<span class="hamburger__line"></span>
+							<span class="hamburger__line"></span>
+							<span class="hamburger__line"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="order-nav">
+		<div class="container">
+			<div class="order-nav__wrapper">
+				<div class="order-nav__item active">
+					<span>Выбор рейса</span> <i class="order-nav__arrow icon-right-chevron"></i>
+				</div>
+				<div class="order-nav__item">
+					<span>Пассажиры</span> <i class="order-nav__arrow icon-right-chevron"></i>
+				</div>
+				<div class="order-nav__item">
+					<span>Оплата</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="order-content">
+		
+		<div class="container">
+			<div class="order-block">
+				<div class="order-block__title">
+					Выберите место на схеме автобуса
+				</div>
+				<div class="order-block__bus-title">
+					Автобус: Автобус 51 место ( Баг: 102 <i data-toggle="tooltip" data-placement="top" title="Перевозчик имеет право заменить транспортное средство, в случае его неисправности, аварии и других аналогичных случаях" class="icon-warning"></i> )
+				</div>
+				<div class="order-block__info">
+					<div class="order-block__info-item">
+						<div class="order-block__info-icon order-block__info-icon_has"></div>
+						<span> - свободное</span>
+					</div>
+					<div class="order-block__info-item">
+						<div class="order-block__info-icon order-block__info-icon_has-not"></div>
+						<span> - занятое</span>
+					</div>
+				</div>
+				<div class="order-block__bus">
+					<div class="bus">
+						<div class="bus__driver">
+							<i class="icon-driver"></i>
+						</div>
+						<div class="bus__left">
+							<div class="bus__column">
+								<div class="bus__item">
+									1
+								</div>
+								<div class="bus__item">
+									2
+								</div>
+							</div>
+							<div class="bus__column">
+								<div class="bus__item">
+									5
+								</div>
+								<div class="bus__item">
+									6
+								</div>
+							</div>
+							<div class="bus__column">
+								<div class="bus__item">
+									9
+								</div>
+								<div class="bus__item">
+									10
+								</div>
+							</div>
+							<div class="bus__column">
+								<div class="bus__item">
+									13
+								</div>
+								<div class="bus__item">
+									14
+								</div>
+							</div>
+							<div class="bus__column">
+								<div class="bus__item">
+									17
+								</div>
+								<div class="bus__item">
+									18
+								</div>
+							</div>
+							<div class="bus__column">
+								<div class="bus__item">
+									21
+								</div>
+								<div class="bus__item">
+									22
+								</div>
+							</div>
+							<div class="bus__column">
+								<div class="bus__item">
+									25
+								</div>
+								<div class="bus__item">
+									26
+								</div>
+							</div>
+							<div class="bus__column">
+								<div class="bus__item">
+									29
+								</div>
+								<div class="bus__item">
+									30
+								</div>
+							</div>
+							<div class="bus__column">
+								<div class="bus__item">
+									33
+								</div>
+								<div class="bus__item">
+									34
+								</div>
+							</div>
+							<div class="bus__column">
+								<div class="bus__item">
+									37
+								</div>
+								<div class="bus__item">
+									38
+								</div>
+							</div>
+							<div class="bus__column">
+								<div class="bus__item">
+									41
+								</div>
+								<div class="bus__item">
+									42
+								</div>
+							</div>
+							<div class="bus__column">
+								<div class="bus__item">
+									45
+								</div>
+								<div class="bus__item">
+									46
+								</div>
+							</div>
+							<div class="bus__column">
+								<div class="bus__item">
+									49
+								</div>
+								<div class="bus__item">
+									50
+								</div>
+							</div>
+						</div>
+						<div class="bus__right">
+							<div class="bus__column">
+								<div class="bus__item">
+									3
+								</div>
+								<div class="bus__item">
+									4
+								</div>
+							</div>
+							<div class="bus__column">
+								<div class="bus__item">
+									7
+								</div>
+								<div class="bus__item">
+									8
+								</div>
+							</div>
+							<div class="bus__column">
+								<div class="bus__item">
+									11
+								</div>
+								<div class="bus__item">
+									12
+								</div>
+							</div>
+							<div class="bus__column">
+								<div class="bus__item">
+									15
+								</div>
+								<div class="bus__item">
+									16
+								</div>
+							</div>
+							<div class="bus__column">
+								<div class="bus__item">
+									19
+								</div>
+								<div class="bus__item">
+									20
+								</div>
+							</div>
+							<div class="bus__column">
+								<div class="bus__item">
+									23
+								</div>
+								<div class="bus__item">
+									24
+								</div>
+							</div>
+							<div class="bus__column">
+								<div class="bus__item">
+									27
+								</div>
+								<div class="bus__item">
+									28
+								</div>
+							</div>
+							<div class="bus__column">
+								<div class="bus__item">
+									29
+								</div>
+								<div class="bus__item">
+									31
+								</div>
+							</div>
+							<div class="bus__column">
+								<div class="bus__item">
+									32
+								</div>
+								<div class="bus__item">
+									35
+								</div>
+							</div>
+							<div class="bus__column">
+								<div class="bus__item">
+									36
+								</div>
+								<div class="bus__item">
+									39
+								</div>
+							</div>
+							<div class="bus__column">
+								<div class="bus__item">
+									40
+								</div>
+								<div class="bus__item">
+									42
+								</div>
+							</div>
+							<div class="bus__column">
+								<div class="bus__item">
+									43
+								</div>
+								<div class="bus__item">
+									44
+								</div>
+							</div>
+							<div class="bus__column">
+								<div class="bus__item">
+									47
+								</div>
+								<div class="bus__item">
+									48
+								</div>
+							</div>
+							<div class="bus__column">
+								<div class="bus__item">
+									51
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="order-block__bus-btn d-none d-sm-block">
+						<a href="passenger.html" class="button">Продолжить</a>
+					</div>
+				</div>
+			</div>
+			<div class="order-block__button">
+				<a href="passenger.html" class="button">
+					Продолжить
+				</a>
+			</div>
+		</div>
+
+	</div>
+	
+	
+	<script src="libs/jquery/dist/jquery.min.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="libs/accordion/accordion.min.js"></script>
+	<script src="libs/simpler-sidebar/src/simpler-sidebar.js"></script>
+	<script src="libs/iziModal/js/iziModal.min.js"></script>
+	<script src="libs/maskinput/maskinput.js"></script>
+	<script src="js/scripts.js"></script>
+
+</body>
+</html>

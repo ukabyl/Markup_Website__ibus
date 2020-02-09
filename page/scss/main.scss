@@ -54,10 +54,21 @@ ul{
 		font-size: 3rem;
 		font-weight: 800;
 		display: block;
+		&-ticket{
+			font-size: 1.5rem;
+			text-align: 	left;
+			display: block;	
+		}
 	}
 	&__second{
 		font-size: 1.5rem;
 		font-weight: 700;
+		&-ticket{
+			font-size: 2rem;
+			margin-top: 1rem;
+			text-align: 	left;
+			display: block;	
+		}
 	}
 }
 
@@ -103,8 +114,28 @@ ul{
   }
 }
 
+.hamburger{
+	display: flex;
+	flex-direction: column;
+	&__line{
+		display: block;
+		height: 2px;
+		width: 30px;
+		background: #000;
+		margin-bottom: 5px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+
 .header{
 	padding: 1.5rem 0;
+	&__hamburger{
+		display: none;
+		width: max-content;
+		margin-left: auto;
+	}
 	&__link{
 		display: flex;
 		margin-left: auto;
@@ -150,6 +181,9 @@ ul{
 	padding: 50px 0 90px;
 	&__title{
 		margin-bottom: 3rem;
+		&-ticket{
+			margin-bottom: 1rem;
+		}
 	}
 	&__search-ticket{
 		width: max-content;

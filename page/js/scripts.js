@@ -12,18 +12,6 @@ $(function() {
   });
   // *********************************** Sidebar
 	
-	// *********************************** Modal
-  	$("#modal-form").iziModal({
-  		width: 450,
-  		headerColor: '#826a45',
-  	});
-  	$("#modal-success").iziModal({
-  		width: 350,
-  		headerColor: '#826a45',
-  		icon: 'icon-confirm',
-  		padding: '40px 20px'
-  	});
-	// *********************************** Modal
 
 	// *****************************************Mask input
     $('.tel-mask').mask("+7(999) 999-9999");
@@ -58,5 +46,9 @@ $(function() {
 		$('.helper').removeClass('active');
 	})
 	// ***************************************** Manager & Helper
+	
+	// ***************************************** Tooltip
+	$('[data-toggle="tooltip"]').tooltip();
+	// ***************************************** Tooltip
 	
 });
