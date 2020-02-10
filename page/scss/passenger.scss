@@ -1,0 +1,51 @@
+.passenger-content{
+	padding: 4rem 0;
+	background: #f5f5f5;
+	&__left{
+		width: 55%;
+	}
+	&__right{
+		width: 40%;
+	}
+}
+
+.passenger-form{
+	background: #fff;
+	border-radius: 10px;
+	padding: 2rem 1rem;
+	margin-bottom: 1rem;
+	&__place{
+		margin-top: 1rem;
+	}
+	&__sbm{
+		background: #fff;
+		border: 1px solid red;
+		color: red;
+		padding: 1rem 2rem;
+		border-radius: 5px;
+		margin-top: 1rem;
+		&:hover{
+			border: 1px solid rgba(#333, .5);
+			color: #000;
+		}
+		i{
+			margin-right: 15px;
+		}
+	}
+	&__title{
+		font-weight: 600;
+		font-size: 1.3rem;
+		margin-bottom: 1rem;
+	}
+	&__wrapper{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		.form-group{
+			width: 48%;
+			label{
+				color: rgba(#333, .6);
+			}
+		}
+	}
+}
