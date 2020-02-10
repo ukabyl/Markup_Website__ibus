@@ -7,6 +7,14 @@
 	&__right{
 		width: 40%;
 	}
+	&__wrapper{
+		display: flex;
+		justify-content: space-between;
+	}
+	&__btn{
+		max-width: 300px;
+		margin: 1rem auto 0;
+	}
 }
 
 .passenger-form{
@@ -45,6 +53,114 @@
 			width: 48%;
 			label{
 				color: rgba(#333, .6);
+			}
+		}
+	}
+}
+
+.passenger-about{
+	background:	#fff;
+	border-radius: 	5px;
+	padding: 	2rem 1rem;
+	width: 	max-content;
+	width: 350px;
+	&__title{
+		font-size: 1.5rem;
+		color: rgba(#000, .7);
+	}
+	&__body{
+		margin: 1rem 0;
+		padding: 1rem 0;
+		border-top: 1px solid rgba(#333, .5);
+		border-bottom: 1px solid rgba(#333, .5);
+	}
+	&__footer{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&-info{
+			span{
+				font-size: 1.2rem;
+			}
+			p{
+				margin-bottom: 0;
+			}
+		}
+		&-price{
+			font-size: 1.5rem;
+		}
+	}
+	&__body{
+		&-row{
+			position: relative;
+			&:before{
+				content: '';
+				position: absolute;
+				display: block;
+				height: auto;
+				top: 13px;
+				bottom: 40px;
+				border-right: 1px dashed rgba(#333, .5);
+				left: 44%;
+			}	
+		}
+		&-column{
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 1rem;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+	&__left{
+		position: relative;
+		&:before{
+			position: absolute;
+			content: '';
+			display: block;
+			height: 10px;
+			width: 10px;
+			border-radius: 100%;
+			border: 1px solid red;
+			left: 135px;
+			background: #fff;
+		}
+	}
+	&__city{
+		font-weight: 600;
+	}
+	&__place{
+		font-size: 12px;
+		margin-top: 5px;
+	}
+	&__time{
+		font-weight: 600;
+	}
+	&__date{
+		font-size: 12px;
+		margin-top: 5px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.passenger-content{
+		&__wrapper{
+			flex-direction: column;
+		}
+		&__left{
+			width: 100%;
+
+		}
+		&__right{
+			width: 100%;			
+		}
+	}
+	.passenger-about{
+		width: 100%;
+		&__left{
+			&:before{
+				display: none;
 			}
 		}
 	}
